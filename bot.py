@@ -5,8 +5,11 @@ import threading
 import time
 import requests
 #from telegram.ext.dispatcher import run_async
+TOKEN = os.environ.get("TOKEN")
+PORT = int(os.environ.get('PORT', 5000))
 
-updater = Updater("1193425272:AAEM41GhNs1wZ7Yn762pK8uSL-J1D9icoY8")
+updater = Updater(TOKEN)
+
 
 group_lst = []
 GROUP = ""
