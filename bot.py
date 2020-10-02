@@ -4,6 +4,7 @@ import threading
 #import enchant
 import time
 import requests
+import os
 #from telegram.ext.dispatcher import run_async
 TOKEN = os.environ.get("TOKEN")
 PORT = int(os.environ.get('PORT', 5000))
